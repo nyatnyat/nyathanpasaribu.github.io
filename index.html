@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Restaurant</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <header>
+        <img src="logo-resto.jpeg" alt="Restaurant Logo" class="logo">
+        <button id="theme-toggle">Toggle Theme</button>
+    </header>
+    <section class="hero">
+        <h1>Welcome to Our Restaurant</h1>
+        <p>Enjoy our exclusive dishes and refreshing drinks.</p>
+    </section>
+    <section class="gallery">
+        <img src="nasi-goreng.jpeg" alt="Nasi Goreng Spesial" class="food">
+        <img src="es-teh-manis.jpeg" alt="Es Teh Manis" class="drink">
+    </section>
+    <section class="menu">
+        <table>
+            <tr>
+                <th>Menu Item</th>
+                <th>Quantity</th>
+                <th>Price</th>
+                <th>Subtotal</th>
+            </tr>
+            <tr>
+                <td><img src="nasi-goreng.jpeg" alt="Nasi Goreng Spesial"> Nasi Goreng Spesial</td>
+                <td>1 Porsi</td>
+                <td>Rp 25,000</td>
+                <td>Rp 25,000</td>
+            </tr>
+            <tr>
+                <td><img src="es-teh-manis.jpeg" alt="Es Teh Manis"> Es Teh Manis</td>
+                <td>1 Gelas</td>
+                <td>Rp 5,000</td>
+                <td>Rp 5,000</td>
+            </tr>
+            <tr>
+                <td colspan="3" class="right">Total Pesanan</td>
+                <td>Rp 30,000</td>
+            </tr>
+            <tr>
+                <td colspan="3" class="right">Pajak</td>
+                <td>Rp 2,000</td>
+            </tr>
+            <tr>
+                <td colspan="3" class="right">Total Tagihan</td>
+                <td>Rp 32,000</td>
+            </tr>
+            <tr>
+                <td colspan="4">
+                    Metode Pembayaran:
+                    <input type="checkbox" id="bank_bca">
+                    <label for="bank_bca">Bank BCA</label>
+                    <input type="checkbox" id="bank_bri">
+                    <label for="bank_bri">Bank BRI</label>
+                    <input type="checkbox" id="ovo">
+                    <label for="ovo">OVO</label>
+                    <input type="checkbox" id="gopay">
+                    <label for="gopay">GoPay</label>
+                </td>
+            </tr>
+        </table>
+    </section>
+    
+</body>
+</html>
