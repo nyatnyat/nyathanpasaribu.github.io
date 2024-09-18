@@ -1,0 +1,64 @@
+/* Main Styles */
+body {
+    font-family: 'Open Sans', sans-serif;
+    background-color: var(--bg-color);
+    color: var(--text-color);
+    margin: 0;
+    padding: 0;
+    transition: background-color 0.3s, color 0.3s;
+}
+
+/* Header Styles */
+header {
+    display: flex;
+    justify-content: space-between;
+    padding: 20px;
+    background: var(--header-bg-color);
+}
+
+/* Toggle button styles */
+#theme-toggle {
+    padding: 10px 20px;
+    cursor: pointer;
+}
+
+/* Table styles */
+table {
+    width: 100%;
+    margin-top: 20px;
+    border-collapse: collapse;
+}
+
+td, th {
+    border: 1px solid #ddd;
+    text-align: left;
+    padding: 8px;
+}
+
+.right {
+    text-align: right;
+}
+
+/* Responsive design for images within the table */
+.food, .drink {
+    width: 50px;
+    height: auto;
+}
+
+.logo {
+    width: 100px;
+    height: auto;
+}
+
+/* Dark and Light theme colors */
+:root {
+    --bg-color: #fff;
+    --text-color: #333;
+    --header-bg-color: #f3f3f3;
+}
+
+[data-theme="dark"] {
+    --bg-color: #333;
+    --text-color: #fff;
+    --header-bg-color: #222;
+}
